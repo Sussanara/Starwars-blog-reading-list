@@ -1,21 +1,33 @@
+import { useEffect, useState } from "react";
 
+const App = () => {
 
-const getSongs = (url) => {
-    fetch(`http://assets.breatheco.de/apis/sound/songs`, {
-      method: "GET",
-    })
+  const urlPeople = "https://swapi.dev/api/people/";
+  const urlPlanets = "https://swapi.dev/api/planets/";
+  const urlVehicles = "https://swapi.dev/api/vehicles/";
+
+  const [url] = useState("https://swapi.dev/api/people/");
+  const [people, setPeople] = useState(null);
+
+  useEffect(() => {
+    getPeople(url);
+    getData();
+  }, [])
+
+  const getPeople = (url) => {
+    fetch(url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }) // GET
       .then((response) => {
-        console.log(response);
         return response.json();
       })
       .then((data) => {
-        setSongs(data);
-        setLimit(data);
+        setPeople(data);
       })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-  useEffect(() => {
-    getSongs(urlApi);
-  }, []);
+
+      
+  }
+}

@@ -8,4 +8,5 @@ body {
 .card {
     margin: 15px;
     display: inline-block;
+    justify-content: center;
 }

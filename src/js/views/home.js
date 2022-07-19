@@ -85,7 +85,7 @@ export const Home = () => {
 		<>
 			<div className="row">
 				<div className="col-4">
-					<div className="card h-100 p-0 border-0" style={{ width: "18rem" }}>
+					<div className="card h-100 p-0 border-0 ms-5 my-5" style={{ width: "18rem" }}>
 						<img src="https://gcdn.lanetaneta.com/wp-content/uploads/2019/11/Star-Wars-10-mejores-momentos-de-C3PO-hasta-ahora-780x405.jpg" className="card-img-top" alt="..." style={{ height: "200px" }} />
 						<div className="card-body">
 							<h5 className="card-title">Characters</h5>
@@ -100,7 +100,7 @@ export const Home = () => {
 					</div>
 				</div>
 				<div className="col-4">
-					<div className="card h-100 p-0 border-0" style={{ width: "18rem" }}>
+					<div className="card h-100 p-0 border-0 ms-5 my-5" style={{ width: "18rem" }}>
 						<img src="https://p4.wallpaperbetter.com/wallpaper/191/875/613/star-wars-at-at-endor-galactic-empire-wallpaper-preview.jpg" className="card-img-top" alt="..." style={{ height: "200px" }} />
 						<div className="card-body">
 							<h5 className="card-title">Planets</h5>
@@ -115,7 +115,7 @@ export const Home = () => {
 					</div>
 				</div>
 				<div className="col-4">
-					<div className="card h-100 p-0 border-0" style={{ width: "18rem" }}>
+					<div className="card h-100 p-0 border-0 ms-5 my-5" style={{ width: "18rem" }}>
 						<img src="https://cdnb.artstation.com/p/assets/images/images/011/977/773/large/luciano-komorizono-sandcrawlerv02.jpg?1532404983&dl=1" className="card-img-top" alt="..." style={{ height: "200px" }} />
 						<div className="card-body">
 							<h5 className="card-title">Vehicles</h5>
@@ -130,7 +130,7 @@ export const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div classname="card-footer"></div>
+			<div className="card-footer"></div>
 			<button className="text-center mt-5" onClick={test}>
 				Hola
 			</button>

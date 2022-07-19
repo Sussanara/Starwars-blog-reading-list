@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Starwars from "../../img/star_wars_logo_PNG10.png";
 
 export const Navbar = () => {
@@ -23,19 +23,24 @@ export const Navbar = () => {
 				<div className="collapse navbar-collapse" id="navbarText">
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 						<li className="nav-item">
-							<Link className="nav-link active" aria-current="page" to="/#">
+							<NavLink className="nav-link active" aria-current="page" to="/home">
+								Home
+							</NavLink>
+						</li>
+						<li className="nav-item">
+							<NavLink className="nav-link" to="/people">
 								Characters
-							</Link>
+							</NavLink>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/#">
+							<NavLink className="nav-link" to="/planets">
 								Planets
-							</Link>
+							</NavLink>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/#">
+							<NavLink className="nav-link" to="/vehicles">
 								Vehicles
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 					<span className="navbar-text">Navbar text with an inline element</span>

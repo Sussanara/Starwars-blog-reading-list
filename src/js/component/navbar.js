@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Starwars from "../../img/star_wars_logo_PNG10.png";
+import BabyYoda from "../../img/baby-yoda.png";
 
 export const Navbar = () => {
 	return (
@@ -44,6 +45,7 @@ export const Navbar = () => {
 						</li>
 					</ul>
 					<span className="navbar-text">Navbar text with an inline element</span>
+					<img src={BabyYoda} style={{ height: "60px" }}></img>
 				</div>
 			</div>
 		</nav>

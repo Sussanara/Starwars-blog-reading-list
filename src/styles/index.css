@@ -1,5 +1,17 @@
 /* 
     General Styles
 */
+body {
+    background-color: black;
+}
 
-       
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    margin: 15px;
+}

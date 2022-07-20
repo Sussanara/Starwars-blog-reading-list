@@ -130,7 +130,7 @@ export const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="card-footer"></div>
+			{/* <div className="card-footer"></div>
 			<button className="text-center mt-5" onClick={test}>
 				Hola
 			</button>
@@ -139,7 +139,7 @@ export const Home = () => {
 			</button>
 			<button className="text-center mt-5" onClick={test3}>
 				vehicles
-			</button>
+			</button> */}
 		</>
 	)
 }

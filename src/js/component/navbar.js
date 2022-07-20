@@ -2,8 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Starwars from "../../img/star_wars_logo_PNG10.png";
 import BabyYoda from "../../img/baby-yoda.png";
+import { useContext } from "react";
+import { Context } from "../store/appContext";
 
 export const Navbar = () => {
+	const { store, actions } = useContext(Context);
 	return (
 		<nav className="navbar navbar-expand-lg bg-dark">
 			<div className="container-fluid">
@@ -44,7 +47,32 @@ export const Navbar = () => {
 							</NavLink>
 						</li>
 					</ul>
-					<span className="navbar-text">Navbar text with an inline element</span>
+					<li className="nav-item dropdown">
+						<a
+							className="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							<span>Favorites </span>
+							<i className="fab fa-gratipay"></i>
+						</a>
+						<ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+						>
+
+							{
+								!!store.favorite &&
+								store.favorite.map((elem, index) => {
+									return (
+										<li key={index}>{elem.name}<i className="fas fa-trash-alt" onClick={() =>{actions.deleteFavorite(elem.name)}}></i></li>
+									)
+								}
+								)
+							}
+						</ul>
+					</li>
 					<img src={BabyYoda} style={{ height: "60px" }}></img>
 				</div>
 			</div>

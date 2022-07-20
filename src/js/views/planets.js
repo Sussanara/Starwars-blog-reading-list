@@ -19,6 +19,9 @@ const Planets = () => {
                                       <li>Name: {elem.name}</li> 
                                       <li>Rotation period: {elem.rotation_period}</li>
                                       <li>Orbital period: {elem.orbital_period}</li>
+                                      <button type onClick={() =>{actions.addFavorite(elem.name)}} className="btn btn-warning">
+                                    <i className="fas fa-heart"></i>
+                                </button>
                                      </p>
                                  </div>
                              </div>

@@ -15,7 +15,11 @@ const Vehicles = () => {
                                  <img src={Vehículos}className="card-img-top" alt="..." />
                                  <div className="card-body">
                                      <p className="card-text">
-                                       {elem.name}
+                                      <li>Name: {elem.name}</li> 
+                                      <li>Cost in credits: {elem.cost_in_credits}</li>
+                                      <button type onClick={() =>{actions.addFavorite(elem.name)}} className="btn btn-warning">
+                                    <i className="fas fa-heart"></i>
+                                </button>
                                      </p>
                                  </div>
                              </div>

@@ -73,6 +73,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					}
 				}) // GET
 					.then((response) => {
+						console.log(url)
 						return response.json();
 					})
 					.then((data) => {
@@ -81,7 +82,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.catch((error) => {
 						console.log(error);
 					});
+
 			},
+			 addFavorite: (insertName) => {
+				const store=getStore()
+				setStore({ favorite: store.favorite.concat({name: insertName}) })
+			 },
+
+			 deleteFavorite: (Borrar) => {
+				const store=getStore()
+				setStore({ favorite: store.favorite.filter(favorites => favorites.name !== Borrar)})
+			 }
 		}
 	};
 }

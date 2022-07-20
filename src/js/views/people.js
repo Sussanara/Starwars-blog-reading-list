@@ -16,7 +16,7 @@ const People = () => {
                     return (
                         <div className="card" style={{ width: "17rem" }} key={index} >
                             <img src={Personajes} className="card-img-top" alt="..." />
-                            <div className="card-body">
+                            <div className="card-body text-center">
                                 <p className="card-text">
                                     <li>Name: {elem.name}</li>
                                     <li>Height: {elem.height}</li>

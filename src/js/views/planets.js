@@ -12,7 +12,7 @@ const Planets = () => {
                      !!store.planets &&
                      store.planets.results.map((elem, index) => {
                          return (
-                             <div className="card" style={{ width: "17rem" }}  key={index} >
+                             <div className="card text-center mx-3" style={{ width: "17rem" }}  key={index} >
                                  <img src={Planetas} className="card-img-top" alt="..." />
                                  <div className="card-body">
                                      <p className="card-text">

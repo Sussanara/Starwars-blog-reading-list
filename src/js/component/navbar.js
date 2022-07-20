@@ -56,8 +56,8 @@ export const Navbar = () => {
 							data-bs-toggle="dropdown"
 							aria-expanded="false"
 						>
-							<span>Favorites </span>
-							<i className="fab fa-gratipay"></i>
+							<span>Favorites   </span>
+							<i className="fab fa-gratipay fa-2x"></i>
 						</a>
 						<ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
 						>

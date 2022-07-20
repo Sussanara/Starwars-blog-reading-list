@@ -11,7 +11,7 @@ const Vehicles = () => {
                      !!store.vehicles &&
                      store.vehicles.results.map((elem, index) => {
                          return (
-                             <div className="card" style={{ width: "17rem" }}  key={index} >
+                             <div className="card text-center" style={{ width: "17rem" }}  key={index} >
                                  <img src={Vehículos}className="card-img-top" alt="..." />
                                  <div className="card-body">
                                      <p className="card-text">
